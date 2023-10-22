@@ -281,4 +281,4 @@ export const extraSection = [
     element: <ECMAScriptTextIcon />,
   }
   
-];
+]; 
