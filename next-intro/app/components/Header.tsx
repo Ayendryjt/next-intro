@@ -1,14 +1,27 @@
-import React from "react";
-import { NavButton } from "./NavButton";
+import React from 'react';
 
-export const Header = () => {
+function NavButton(props: { buttonLabel: string, borderColor: string, buttonBg: string, textColor: string }) {
+  const { buttonLabel, borderColor, buttonBg, textColor } = props;
+
+  const buttonStyle = {
+    border: `2px solid ${borderColor}`,
+    backgroundColor: buttonBg,
+    color: textColor,
+  };
+
   return (
-    <header className="flex justify-between items-center w-full mx-auto my-4 max-w-6xl">
-      <h2 className="text-black text-xl font-bold">🗳️Vota.dev</h2>
-      <div className="flex justify-between items-center">
-        <NavButton buttonLabel='Sign In' borderColor='border-white' buttonBg='bg-white' textColor='text-dark'/>
-        <NavButton buttonLabel='Sign Up' borderColor='border-black' buttonBg='bg-black' textColor='text-white'/>
-      </div>
-    </header>
+    <button style={buttonStyle}>{buttonLabel}</button>
   );
-};
+}
+
+function App() {
+  return (
+    <div>
+      <NavButton buttonLabel='Sign In' borderColor='black' buttonBg='black' textColor='white' />
+      <NavButton buttonLabel='Sign Up' borderColor='blue' buttonBg='white' textColor='blue' />
+      {/* Agrega más botones según sea necesario */}
+    </div>
+  );
+}
+
+export default App;
