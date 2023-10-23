@@ -12,7 +12,7 @@ import {
   fifthSection,
   sixthSection,
   seventhSection,
-  EighthSection,
+  eighthSection,
   ninthSection,
   tenthSection,
   eleventhSection, 
@@ -58,6 +58,9 @@ export default function Home() {
 
           <SecondaryTitle title="Mejor test E2E"/>
           <VoteSection section={EighthSection}/>
+
+          <SecondaryTitle title="Mejor test E2E" />
+          <VoteSection section={eighthSection} />
 
           <SecondaryTitle title="Mejor BaaS (Backend as a Service)"/>
           <VoteSection section={ninthSection}/>
