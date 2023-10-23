@@ -21,13 +21,13 @@ import {
 
 export default function Home() {
   return (
-    <div className="bg-yellow-400 min-h-screen flex flex-col">
+    <div className='bg-yellow-400 min-h-screen flex flex-col'>
       <Header />
-      <section className="mt-48 max-w-[1000px] mx-auto">
+      <section className='mt-48 max-w-[1000px] mx-auto'>
         <h1 className="max-w-5xl mx-auto text-5xl font-extrabold text-center text-black md:text-8xl">
           Vota los mejores del desarrollo web
         </h1>
-        <p className="max-w-lg mx-auto mt-10 text-2xl text-center text-black opacity-70">
+        <p className='max-w-lg mx-auto mt-10 text-2xl text-center text-black opacity-70'>
           Decide qué stack, tecnologías y frameworks han sido los mejores del
           año. ¡Cada voto cuenta!
         </p>
